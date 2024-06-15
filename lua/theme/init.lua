@@ -1,7 +1,7 @@
-local theme = {}
+local util          = require 'theme.util'
+local theme         = require 'theme.theme'
 
-function theme.setup()
-  print('Helle 123')
-end
+vim.o.background    = 'dark'
+vim.g.colors_name   = 'theme'
 
-return theme
+util.load(theme)
